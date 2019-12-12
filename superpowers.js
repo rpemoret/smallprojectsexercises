@@ -138,7 +138,7 @@ console.log("superheroes that weigh 200 lbs are " + array200);
 
 const arrfilter = arraySuper
   .filter(function(filterfunction) {
-    return filterfunction.publisher.includes("DC Comics");
+    return filterfunction.publisher === "DC Comics";
   })
   .map(function(filterarray) {
     return filterarray.name;
@@ -150,7 +150,7 @@ console.log("DC comics superheroes are " + arrfilter);
 
 const arrfilter2 = arraySuper
   .filter(function(filterfunction) {
-    return filterfunction.publisher.includes("Marvel Comics");
+    return filterfunction.publisher === "Marvel Comics";
   })
   .map(function(filterarray) {
     return filterarray.name;
@@ -162,7 +162,7 @@ console.log("Marvel comics superheroes are " + arrfilter2);
 
 const arrfilter3 = arraySuper
   .filter(function(filterfunction) {
-    return filterfunction.first_appearance.includes("");
+    return filterfunction.first_appearance;
   })
   .map(function(filterarray) {
     return filterarray.first_appearance;
@@ -177,7 +177,7 @@ console.log(
 const arrfilter4 = arraySuper
   .filter(function(filterfunction) {
     return (
-      filterfunction.publisher.includes("DC Comics") &&
+      filterfunction.publisher === "DC Comics" &&
       parseInt(filterfunction.weight) > 0
     );
   })
@@ -195,7 +195,7 @@ console.log("total weight of DC comics superheroes is " + arrfilter4);
 const arrfilter5 = arraySuper
   .filter(function(filterfunction) {
     return (
-      filterfunction.publisher.includes("Marvel Comics") &&
+      filterfunction.publisher === "Marvel Comics" &&
       parseInt(filterfunction.weight) > 0
     );
   })
