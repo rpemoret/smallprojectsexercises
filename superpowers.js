@@ -106,6 +106,14 @@ arraySuper = [
   }
 ];
 
+// list all superheroes in an array
+
+const array1 = arraySuper.map(function(arrfunction) {
+  return arrfunction.name;
+});
+
+console.log(array1);
+
 // list all superheroes with weight below 190
 
 const arraySuperLight = arraySuper.filter(function(weightFunction) {
