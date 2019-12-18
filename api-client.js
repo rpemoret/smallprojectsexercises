@@ -23,4 +23,20 @@ getData = async function() {
   }
 };
 
+console.log(data);
+
 getData();
+
+addlisttoDOM = function(setdata) {
+  const list = document.getElementById("list");
+  setdata.forEach(function(data) {
+    let listitem = document.createElement("li");
+
+    listitem.src = data;
+    let contentoflistitem = document.createTextNode(data);
+  });
+  list.appendChild(listitem);
+  listitem.appendChild(contentoflistitem);
+};
+
+console.log(data);
