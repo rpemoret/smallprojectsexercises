@@ -1,3 +1,24 @@
+const users = [
+  {
+    id: 1,
+    name: "Andre Rowe",
+    username: "andrer",
+    email: "andrer@andrerowe.com",
+    phone: "0612345678",
+    website: "andrerowe.com",
+    password: "andre3456"
+  },
+  {
+    id: 2,
+    name: "Yasmin Zhang",
+    username: "yas456",
+    email: "yas@yas.com",
+    phone: "",
+    website: "yas.com",
+    password: "yas345678"
+  }
+];
+
 // adding to objects and arrays different methods
 
 const newUser = {
@@ -5,6 +26,7 @@ const newUser = {
   name: "Dominic Owen",
   username: "dowen41",
   email: "d.owen@dowen.com",
+  phone: "",
   website: "dowen.com",
   password: "dowen4312"
 };
