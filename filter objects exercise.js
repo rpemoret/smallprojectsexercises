@@ -18,3 +18,9 @@ fruit.filter(fruit => fruit.amount > 5);
 fruit.sort((i1, i2) => i1.amount - i2.amount);
 
 console.log(fruit);
+
+// show each element in the result array
+
+fruit.map(fruit => console.log(fruit.name + ":" + fruit.amount));
+
+fruit.map;
