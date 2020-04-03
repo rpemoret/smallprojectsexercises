@@ -27,11 +27,14 @@ fruit.map;
 
 // add eventlistener to an html button for filtering fruit
 
-const filterfruit = document.getElementsByClassName("filter");
-filterfruit.addEventlistener("click"),
-  function() {
-    newfruit();
-  };
+const filterfruitbutton = function() {
+  const filterfruit = document.getElementById("filter");
+
+  filterfruit.addEventlistener("click"),
+    function() {
+      newfruit();
+    };
+};
 
 // function when button is clicked, gets inner HTML elements to be filtered
 
