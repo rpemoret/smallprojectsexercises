@@ -32,3 +32,11 @@ filterfruit.addEventlistener("click"),
   function() {
     newfruit();
   };
+
+// function when button is clicked, gets inner HTML elements to be filtered
+
+newfruit = function() {
+  document.getElementById("fruit").innerHTML = fruit.amount.filter(
+    checkAmountabove5
+  );
+};
