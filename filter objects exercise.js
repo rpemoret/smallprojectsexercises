@@ -24,3 +24,11 @@ console.log(fruit);
 fruit.map(fruit => console.log(fruit.name + ":" + fruit.amount));
 
 fruit.map;
+
+// add eventlistener to an html button for filtering fruit
+
+const filterfruit = document.getElementsByClassName("filter");
+filterfruit.addEventlistener("click"),
+  function() {
+    newfruit();
+  };
