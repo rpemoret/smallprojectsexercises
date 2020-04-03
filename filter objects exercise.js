@@ -40,3 +40,7 @@ newfruit = function() {
     checkAmountabove5
   );
 };
+
+checkAmountabove5 = function(fruit) {
+  return fruit.amount > 5;
+};
