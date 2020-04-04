@@ -18,28 +18,7 @@ console.log(fruit);
 
 // add eventlistener to an html button for filtering fruit
 
-const filterfruitbutton = function () {
-  const filterfruit = document.getElementById("filter");
-
-  filterfruit.addEventlistener("click"),
-    function () {
-      newfruit();
-    };
-};
-
 // function when button is clicked, gets inner HTML elements to be filtered
-
-let newfruit = function () {
-  document.getElementById("fruit").innerHTML = fruit.amount.filter(
-    checkAmountabove5
-  );
-};
-
-let checkAmountabove5 = function (fruit) {
-  return fruit.amount > 5, console.log(fruit);
-};
-
-console.log(checkAmountabove5);
 
 // show each element in the result array
 
