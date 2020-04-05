@@ -8,7 +8,7 @@ let fruit = [
 
 // filter for fruit amounts larger than 5
 
-fruit.filter((fruit) => fruit.amount > 5);
+//fruit.filter((fruit) => fruit.amount > 5);
 
 // sort in descending order
 
@@ -20,6 +20,16 @@ console.log(fruit);
 
 // function when button is clicked, gets inner HTML elements to be filtered
 
+let filterfruit = fruit.filter(function (fruit) {
+  return (
+    fruit.amount > 5,
+    filterfruit.map((fruit) => console.log(fruit.name + ":" + fruit.amount))
+  );
+});
+
 // show each element in the result array
 
+/*
+
 fruit.map((fruit) => console.log(fruit.name + ":" + fruit.amount));
+*/
